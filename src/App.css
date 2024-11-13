@@ -1,0 +1,102 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+header h1{
+  text-align: center;
+  font-size: 2rem;
+  color: #f8f3f3;
+  margin-left:9px;
+  text-decoration: underline;
+}
+.image{
+  height:150px;
+  width:200px;
+  margin-left: 70px;
+  border: 10px solid;
+  border-image-slice:1;
+  border-width: 5px;
+  padding: 1rem 1rem;
+  border-image-source: linear-gradient(to left,#743ad5,#d53a9d);
+}
+.task-input-container{
+  display: flex;
+justify-content: center;
+align-items: center;
+gap:10px;
+margin-bottom: 20px;
+}
+
+input[type="text"]{
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+  margin-left: 60px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: all 0.3 ease;
+}
+input[type="text"]:focus{
+  border-color:#007bff ;
+}
+.add-task-button{
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: aliceblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+}
+.add-task-button:hover{
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+.task-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #06366b;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.task-item span{
+  flex-grow: 1;
+  font-size: 1rem;
+}
+ button{
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  
+}
+button:hover{
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+} 
+button[aria-label="Edit task"]{
+  color: orange;
+}
+button[aria-label="Edit task"]:hover{
+  color: #fff;
+  background-color: orange;
+  border-radius: 50%;
+}
+button[aria-label="Delete task"]{
+  color: red;
+}
+button[aria-label="Delete task"]:hover{
+color:white;
+background-color: red;
+border-radius: 50%;
+}
